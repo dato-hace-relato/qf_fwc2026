@@ -553,6 +553,7 @@ const PHOTOS = {
   'Marruecos':      'Marruecos.webp',
   'Noruega':        'Norway.webp',
   'Colombia':       'Colombia.jpg',
+  'Suiza':          'Suiza.webp',
 };
 
 const ALL_TEAMS = [
@@ -601,13 +602,15 @@ const ALL_TEAMS = [
   { name:'Colombia',  year:'2026', flag:'co', photoKey:'Colombia',
     scores:{talent:10.5,depth:3.0,defense:6.3,exp:7.1,id:5.2},     pr:18, s:12,
     note:'James + Luis Díaz. Finalistas Copa América 2024. Defensa débil en CONMEBOL.' },
+  { name:'Suiza',     year:'2026', flag:'ch', photoKey:'Suiza',
+    scores:{talent:10.1,depth:8.5,defense:3.1,exp:3.5,id:8.8},     pr:15, s:16,
+    note:'Yakin 5 años. Sistema compacto y organizado. Xhaka + Ndoye + Embolo. Nunca se sabe con Suiza en KO.' },
 ];
 
 const TABS_DATA = [
   { label:'Campeones Siglo XXI', keys: ALL_TEAMS.slice(0,6).map(t=>t.name+t.year), sort:'chrono' },
   { label:'2026 · Campeones',    keys: ALL_TEAMS.slice(6,10).map(t=>t.name+t.year), sort:'ovr' },
-  { label:'2026 · Retadores',    keys: ALL_TEAMS.slice(10).map(t=>t.name+t.year),   sort:'ovr' },
-  { label:'Metodología',         keys: null, sort: null },
+  { label:'2026 · Retadores',    keys: ALL_TEAMS.slice(10).map(t=>t.name+t.year),   sort:'ovr' },  { label:'Metodología',         keys: null, sort: null },
 ];
 
 // per-card mutable state
